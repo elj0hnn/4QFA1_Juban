@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="signupForm">
+            <fieldset>
+                <legend>Sign Up!</legend>
+                <div class="input-field">
+                    <div class="input-field-group">
+                        <i class='bx bxs-user'></i>
+                        <p>Enter Full Name:</p>
+                        <input type="text" id="fullName" name="FullName" placeholder="Full Name" required onblur="inputValidation(this)" onfocus="removeValidationStyle(this)">
+                    </div>
+                </div>
+                <div class="input-field">
+                    <div class="input-field-group">
+                        <i class='bx bxs-user'></i>
+                        <p>Enter Username:</p>
+                        <input type="text" id="userName" name="UserName" placeholder="Username" required onblur="inputValidation(this)" onfocus="removeValidationStyle(this)">
+                    </div>
+                </div>
+                <div class="input-field">
+                    <div class="input-field-group">
+                        <i class='bx bxl-gmail' ></i>
+                        <p>Enter Email:</p>
+                        <input type="email" id="userEmail" name="UserEmail" placeholder="Email" required onblur="inputValidation(this)" onfocus="removeValidationStyle(this)">
+                    </div>
+                </div>
+                <div class="input-field">
+                    <div class="input-field-group">
+                        <i class='bx bxs-home' ></i>
+                        <p>Enter Address:</p>
+                        <input type="text" name="UserAddress" placeholder="Address" required onblur="inputValidation(this)" onfocus="removeValidationStyle(this)">
+                    </div>
+                </div>
+                <div class="input-field">
+                    <div class="input-field-group">
+                        <i class='bx bxs-lock-alt' ></i>
+                        <p>Enter Password:</p>
+                        <input type="password" id="userPassword" name="UserPassword" placeholder="Password" required onblur="inputValidation(this)" onfocus="removeValidationStyle(this)">
+                    </div>
+                </div>
+                <div class="input-field">
+                    <div class="input-field-group">
+                        <i class='bx bx-male-female'></i>
+                        <label for="userGender">Gender:</label>
+                        <select id="userGender" name="UserGender" required onblur="inputValidation(this)" onfocus="removeValidationStyle(this)">
+                            <option value="" selected disabled hidden>Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Prefer not to mention">Prefer not to mention</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-field">
+                    <div class="input-field-group">
+                        <label for="userInterests" style ="font-size: 20px;">Interests:</label><br>
+                        <textarea id="userInterests" name="UserInterests" required onblur="inputValidation(this)" onfocus="removeValidationStyle(this)"></textarea>
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button type="submit" value="Submit">Submit</button>
+                    <button type="reset" value="Reset" onclick="clearDisplay()">Reset</button>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Information</legend>
+                <div id="display"></div>
+            </fieldset>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

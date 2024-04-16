@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+fieldset{
+    margin-top: 1vh;
+    padding: 1vh;
+    border: 5px dotted #ffdc41;
+    border-radius: px;
+}
+legend{
+    font-size: 40px;
+    font-weight: 1000;
+    text-align: center;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(media/bg.jpg);
+}
+
+.form-container{
+    width: 30vw;
+    min-height: 90vh;
+    height: auto;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    background-color: #f6ff7d;
+    padding: 2vh;
+    border-radius: 10px;
+    color: rgb(255, 174, 0);
+}
+
+.form-container .input-field{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: black;
+    padding: 10px;
+}
+
+.input-field .input-field-group{
+    text-align:left;
+    width: 100%;
+}
+
+.button-group{
+    text-align: center;
+}
+
+button[type="submit"] {
+    padding: 7px;
+    margin: 7px;
+    width: 10vw;
+    background-color: #76f066;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: crosshair;
+}
+button[type="reset"] {
+    padding: 7px;
+    margin: 7px;
+    width: 10vw;
+    background-color: #eb4539;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor:crosshair;
+}
+button[type="submit"]:hover {
+    background-color: #7ccfdafd;
+}
+button[type="reset"]:hover {
+    background-color: #dd72d8;
+}
+
+.input-field-group #userInterests{
+    padding: 3vh;
+    width: 20vw;
+    height: 20vh;
+    background: white;
+    border: 2px solid rgb(255, 187, 0);
+    border-radius: 5px;
+    color: rgb(255, 174, 0);
+}
+
+#display{
+    color: black;
+    font-weight: bold;
+}
